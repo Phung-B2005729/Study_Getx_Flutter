@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:getxtest/Widget/FirstScreen.dart';
+import 'package:getxtest/Widget/HangHoa.dart';
 import 'package:getxtest/Widget/TestStorage.dart';
 import 'package:getxtest/Widget/translations.dart';
 
@@ -58,6 +59,16 @@ class HomeScreen extends StatelessWidget {
                     // chuyển đến trang sencond
                   },
                   child: const Text("Go to  page Trangslation")),
+              ElevatedButton(
+                onPressed: () {
+                  Get.to(() => HangHoa());
+                  // chuyển đến trang sencond
+                },
+                style: const ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll<Color>(
+                        Color.fromARGB(255, 187, 0, 255))),
+                child: const Text("Go to  page Hàng Hoá"),
+              ),
             ])));
   }
 }

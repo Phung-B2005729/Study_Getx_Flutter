@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:getxtest/Get_Localization/localizations/app_localization.dart';
@@ -8,6 +9,7 @@ import 'package:getxtest/Widget/HomeScreen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await GetStorage.init();
+
   //AllBinDing().dependencies();
   runApp(MyApp());
 }
