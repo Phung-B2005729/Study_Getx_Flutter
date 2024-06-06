@@ -8,7 +8,8 @@ class HangHoaController extends GetxController {
   @override
   void onInit() {
     print('on Init');
-    getAll();
+    // getAll();
+    HangHoaService().getUser();
     super.onInit();
     //super.onInit();
   }
